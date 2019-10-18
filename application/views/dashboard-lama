@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<style>
+
+#ct{
+
+
+    margin-left:300px;
+
+
+
+
+}
+
+
+</style>
+
+<body onload=display_ct();>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Dashboard
+            <small></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+
+   
+        
+
+        <div class="row">
+            
+                <div class="box">
+                   
+                      <img src="<?php echo base_url('assets/img/Hermina.png'); ?>" alt="Hermina Hospital" class="center" >
+                        <span class="text-center"><h1><b>SISTEM INFORMASI PROSES ADMINISTRASI</b></h1></span>
+                         <p style="text-align:center;font-size:12;">Jl. Selangit B-10 Kav 04 RT - RW - Gunung Sahari Selatan Kec. Kemayoran <br>Kota Administrasi Jakarta Pusat 10720<br><hr></p>
+        <p style="text-align:center;font-size:10;">Jakarta, <?php echo date("d M Y") ?></p>
+                        </div>
+                </div><!-- /.box -->
+            
+    
+</body>
+</html>
+
+
+<script type="text/javascript"> 
+
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var strcount
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+tt=display_c();
+ }
+</script>
